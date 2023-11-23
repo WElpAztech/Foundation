@@ -1,0 +1,134 @@
+/* Reset and general styles */
+body {
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Top bar styles */
+  .top-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  /* Logo styles */
+  .logo-svg {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  /* Circle graph styles */
+  .circle-graph {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #eee;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+  
+    &.gt-50 {
+      background-color: #1779ba;
+      color: #fff;
+    }
+  }
+  
+  /* Profile section styles */
+  .profile-section {
+    margin-top: 20px;
+  
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+      .card-divider {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+      }
+  
+      .card-section {
+        padding: 20px;
+      }
+    }
+  }
+  
+  /* Bar graph styles */
+  .bar-graph {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    margin: 20px 0;
+  
+    .bar {
+      width: 20px;
+      background-color: #ccc;
+      text-align: center;
+      position: relative;
+  
+      .description {
+        font-size: 14px;
+        color: #777;
+        position: absolute;
+        bottom: -20px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  
+  .stats-list {
+    list-style-type: none;
+    clear: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  
+    .stats-list-positive {
+      color: $success-color;
+    }
+  
+    .stats-list-negative {
+      color: $alert-color;
+    }
+  
+    & > li {
+      display: inline-block;
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid $medium-gray;
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: bold;
+  
+      &:last-child {
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .stats-list-label {
+        display: block;
+        margin-top: 2px;
+        font-size: 0.9em;
+        font-weight: normal;
+        
+      }
+    }
+}
+  
